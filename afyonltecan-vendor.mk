@@ -195,12 +195,34 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libMMFW_scone_stub.so:system/vendor/lib/libMMFW_scone_stub.so \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmjpeg_interface.so:system/vendor/lib/libmmjpeg_interface.so
 
+###########3
+# JJADD-AFYONSTOCK BLOBS-CAMERA
+PRODUCT_COPY_FILES += \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
 
+# JJADD-AFYONSTOCK BLOBS-CAMERA-removed from common
+PRODUCT_COPY_FILES += \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_image_stab.so:system/vendor/lib/libmmcamera_image_stab.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so
 
+# JJADD-AFYONSTOCK BLOBS-CAMERA
+PRODUCT_COPY_FILES += \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libc2dcolorconvert.so:system/vendor/lib/libc2dcolorconvert.so
 
-
-
-
+PRODUCT_COPY_FILES += \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libc2d2_z180.so:system/vendor/lib/libc2d2_z180.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libc2d30.so:system/vendor/lib/libc2d30.so
 
 
 
