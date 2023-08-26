@@ -223,4 +223,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libc2d30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30.so
 
 
+# JJADD-AFYONSTOCK BLOBS-CAMERA-breaks camera
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libactuator_ak7345_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345_camcorder.so \
+#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libactuator_ak7345_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345_camera.so
+
+# JJADD-AFYONSTOCK BLOBS-CAMERA-breaks camera
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libactuator_dw9804_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9804_camcorder.so \
+#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libactuator_dw9804_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9804_camera.so \
+
 
