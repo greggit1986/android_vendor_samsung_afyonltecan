@@ -183,8 +183,25 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libc2d30.so:system/vendor/lib/libc2d30.so
 
 # JJADD-AFYONSTOCK BLOBS-RIL
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/afyonltecan/proprietary/vendor/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so \
+#    vendor/samsung/afyonltecan/proprietary/vendor/lib/libsec-ril.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsec-ril.so
+
+# JJADD-AFYONSTOCK BLOBS-RIL test lin19-built with sammy Ril source???
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecril-client.so \
+#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libsecril-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecril-client.so
+
+# JJADD-AFYONSTOCK BLOBS-RIL test lin19-2
 PRODUCT_COPY_FILES += \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libdsucsd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsucsd.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libdsnetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsnetutils.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csvt_srvc.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libatparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libatparser.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libcordon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcordon.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libfactoryutil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfactoryutil.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libomission_avoidance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomission_avoidance.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libcordon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcordon.so 
 
 #PRODUCT_COPY_FILES += \
 #    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/libsec-ril_s3vegxx_lin17.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so
@@ -192,5 +209,9 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES += \
 #    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so
 
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/vendor_lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so
+PRODUCT_COPY_FILES += \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libsec-ril_patched.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so
+
+
+PRODUCT_COPY_FILES += \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/vendor_lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so
