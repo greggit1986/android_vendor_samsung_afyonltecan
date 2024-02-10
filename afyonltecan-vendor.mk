@@ -49,6 +49,11 @@ PRODUCT_COPY_FILES += \
    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/sensors/libacdapi_clb.so:system/lib/libacdapi_clb.so \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/sensors/sensors.msm8226.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.vendor.msm8226.so
 
+# JJADD-AFYONSTOCK BLOBS-SENSORS-lin19
+PRODUCT_COPY_FILES += \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/sensors/alps_param.dat:$(TARGET_COPY_OUT_VENDOR)/etc/alps_param.dat \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/sensors/alp_cal.dat:$(TARGET_COPY_OUT_VENDOR)/etc/alp_cal.dat
+
 # JJADD-AFYONSTOCK BLOBS-CAMERA
 PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/camera.msm8226.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.vendor.msm8226.so
