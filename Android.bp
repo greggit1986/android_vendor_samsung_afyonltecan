@@ -45,3 +45,26 @@ cc_library_shared {
         "libcutils",
     ],
 }
+
+//Qcom ril experiment
+android_app_import {
+	name: "shutdownlistener",
+	owner: "samsung",
+	apk: "proprietary/vendor/app/shutdownlistener/shutdownlistener.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "qcrilmsgtunnel",
+	owner: "samsung",
+	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}

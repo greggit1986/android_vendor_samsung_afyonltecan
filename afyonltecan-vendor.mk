@@ -89,7 +89,6 @@ PRODUCT_COPY_FILES += \
 #RIL
 PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libdsucsd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsucsd.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csvt_srvc.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libatparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libatparser.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libcordon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcordon.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libfactoryutil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfactoryutil.so \
@@ -98,30 +97,66 @@ PRODUCT_COPY_FILES += \
 
 #RIL-G386WVLS1AQB1
 PRODUCT_COPY_FILES += \
-    vendor/samsung/afyonltecan/proprietary/vendor/bin/qmuxd:$(TARGET_COPY_OUT_VENDOR)/bin/qmuxd \
     vendor/samsung/afyonltecan/proprietary/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libsec-ril_patched.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libgabi++.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgabi++.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libcorkscrew.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcorkscrew.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libgccdemangle.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgccdemangle.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libstlport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstlport.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libdsnetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsnetutils.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
+
+#QCOM RIL EXPERIMENT
+PRODUCT_COPY_FILES += \
+    vendor/samsung/afyonltecan/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
+    vendor/samsung/afyonltecan/proprietary/vendor/bin/qmuxd:$(TARGET_COPY_OUT_VENDOR)/bin/qmuxd \
+    vendor/samsung/afyonltecan/proprietary/vendor/bin/radish:$(TARGET_COPY_OUT_VENDOR)/bin/radish \
+    vendor/samsung/afyonltecan/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
+    vendor/samsung/afyonltecan/proprietary/vendor/bin/rfs_access:$(TARGET_COPY_OUT_VENDOR)/bin/rfs_access \
+    vendor/samsung/afyonltecan/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
+    vendor/samsung/afyonltecan/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
+    vendor/samsung/afyonltecan/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
+    vendor/samsung/afyonltecan/proprietary/vendor/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcnvitems.xml \
+    vendor/samsung/afyonltecan/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
+    vendor/samsung/afyonltecan/proprietary/vendor/framework/qcnvitems.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcnvitems.jar \
+    vendor/samsung/afyonltecan/proprietary/vendor/framework/qcrilhook.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcrilhook.jar \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdataitems.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csvt_srvc.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-qmi-1.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmemlog.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libuicc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuicc.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libvss_common_idl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvss_common_idl.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libvss_common_iface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvss_common_iface.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libvss_nv_idl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvss_nv_idl.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libvss_nv_iface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvss_nv_iface.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so
 
 #Shims
 PRODUCT_PACKAGES += \
     libshim_atomic \
-    libshim_cutils
+    libshim_cutils \
+    qcrilmsgtunnel \
+    shutdownlistener
 
