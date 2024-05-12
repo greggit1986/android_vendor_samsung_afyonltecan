@@ -17,6 +17,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),afyonltecan)
+ifeq ($(TARGET_DEVICE),afyonltetmo)
 
 endif
