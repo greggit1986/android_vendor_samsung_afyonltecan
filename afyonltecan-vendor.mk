@@ -56,7 +56,7 @@ PRODUCT_COPY_FILES += \
 
 # JJADD-AFYONSTOCK BLOBS-CAMERA
 PRODUCT_COPY_FILES += \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/camera.msm8226.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.vendor.msm8226.so
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/camera.msm8226.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.legacy.msm8226.so
 
 # JJADD-AFYONSTOCK BLOBS-CAMERA
 PRODUCT_COPY_FILES += \
