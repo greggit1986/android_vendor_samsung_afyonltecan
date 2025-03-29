@@ -153,10 +153,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_cac.so:system/vendor/lib/libmmcamera_cac.so \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libMMFW_scone_stub.so:system/vendor/lib/libMMFW_scone_stub.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_interface.so:system/vendor/lib/libmmcamera_interface.so \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmjpeg_interface.so:system/vendor/lib/libmmjpeg_interface.so
-
-#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_interface.so:system/vendor/lib/libmmcamera_interface.so \
-
 
 ###########3
 # JJADD-AFYONSTOCK BLOBS-CAMERA
