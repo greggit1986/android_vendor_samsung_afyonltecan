@@ -19,41 +19,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/afyonltecan
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/afyonltecan/proprietary/etc/B08QT_imx175_module_info.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/B08QT_imx175_module_info.xml \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libTsAe.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libTsAe.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libTsAf.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libTsAf.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libTs_J_Accm.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libTs_J_Accm.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libTs_J_Awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libTs_J_Awb.so  \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libchromatix_imx175_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libchromatix_imx175_common.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libchromatix_imx175_common_res0.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libchromatix_imx175_common_res0.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libchromatix_imx175_common_res1.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libchromatix_imx175_common_res1.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libchromatix_imx175_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libchromatix_imx175_default_video.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libchromatix_imx175_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libchromatix_imx175_liveshot.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libchromatix_imx175_panorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libchromatix_imx175_panorama.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libchromatix_imx175_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libchromatix_imx175_preview.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libchromatix_imx175_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libchromatix_imx175_snapshot.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libchromatix_imx175_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libchromatix_imx175_video_hd.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libchromatix_imx175_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libchromatix_imx175_zsl.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/B08QT_libchromatix_imx175_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/B08QT_libchromatix_imx175_zslshot.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_imx175_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx175_common.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_imx175_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx175_preview.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmcamera_imx175.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx175.so
-
-
-#JJReplaced with stockblobs
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_imglib_modules.so \
-#    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_isp_modules.so \
-#    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \
-#    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
-#    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_algorithm.so \
-#    vendor/samsung/afyonltecan/proprietary/vendor/lib/libTs_J_Awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTs_J_Awb.so \
-#    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so \
-#    vendor/samsung/afyonltecan/proprietary/vendor/lib/liboemcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcamera.so
-#    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmcamera_fidelix_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_fidelix_eeprom.so \
-
-
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so
 
 # JJADD-AFYONSTOCK BLOBS REPLACE ONES FROM HERE-CAMERA
 PRODUCT_COPY_FILES += \
@@ -145,9 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so
 
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_s5k6a3yx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k6a3yx.so
-
 # JJADD-AFYONSTOCK BLOBS-CAMERA2
 PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libarcsoft_face_tracking.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_face_tracking.so \
@@ -157,80 +120,11 @@ PRODUCT_COPY_FILES += \
 
 # JJADD-AFYONSTOCK BLOBS-CAMERA
 PRODUCT_COPY_FILES += \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/C08QT_libchromatix_imx175_common_res0.so:$(TARGET_COPY_OUT_VENDOR)/lib/C08QT_libchromatix_imx175_common_res0.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/C08QT_libchromatix_imx175_common_res1.so:$(TARGET_COPY_OUT_VENDOR)/lib/C08QT_libchromatix_imx175_common_res1.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/C08QT_libchromatix_imx175_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/C08QT_libchromatix_imx175_common.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/C08QT_libchromatix_imx175_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/C08QT_libchromatix_imx175_default_video.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/C08QT_libchromatix_imx175_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/C08QT_libchromatix_imx175_liveshot.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/C08QT_libchromatix_imx175_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/C08QT_libchromatix_imx175_preview.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/C08QT_libchromatix_imx175_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/C08QT_libchromatix_imx175_snapshot.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/C08QT_libchromatix_imx175_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/C08QT_libchromatix_imx175_video_hd.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/C08QT_libchromatix_imx175_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/C08QT_libchromatix_imx175_zslshot.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/C08QT_libchromatix_imx175_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/C08QT_libchromatix_imx175_zsl.so
-
-
-# JJADD-AFYONSTOCK BLOBS-CAMERA
-PRODUCT_COPY_FILES += \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k8b1yx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k8b1yx_common.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k8b1yx_pip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k8b1yx_pip.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k8b1yx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k8b1yx_preview.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k8b1yx_smart_stay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k8b1yx_smart_stay.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k8b1yx_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k8b1yx_snapshot.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k8b1yx_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k8b1yx_video.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k8b1yx_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k8b1yx_vt_hd.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k8b1yx_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k8b1yx_vt.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k8b1yx_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k8b1yx_zslshot.so
-
-# JJADD-AFYONSTOCK BLOBS-CAMERA
-PRODUCT_COPY_FILES += \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_imx135.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx135.so \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_rohm_brce064gwz_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_rohm_brce064gwz_eeprom.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_s5k3h5xa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3h5xa.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_s5k4ecgx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k4ecgx.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_s5k4h5ya.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k4h5ya.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_s5k8b1yx.so:system/vendor/lib/libmmcamera_s5k8b1yx.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_sr130pc20.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sr130pc20.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_sr200pc20.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sr200pc20.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_sr352.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sr352.so
-
-# JJADD-AFYONSTOCK BLOBS-CAMERA
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6a3yx_smart_stay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_smart_stay.so
-#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6a3yx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_common.so \
-#     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6a3yx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_default_video.so \
-#     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6a3yx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_preview.so \
-#     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6a3yx_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_snapshot.so \
-#     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6a3yx_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_video_hd.so \
-#     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6a3yx_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_zsl.so \
-
-
-# JJADD-AFYONSTOCK BLOBS-CAMERA-OK BUT REMOVED
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_s5k6b2yx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k6b2yx.so \
-#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6b2yx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_common.so \
-#     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6b2yx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_default_video.so \
-#     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6b2yx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_preview.so \
-#     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6b2yx_smart_stay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_smart_stay.so \
-#     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6b2yx_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_vt_hd.so \
-#     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6b2yx_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_vt.so \
-#     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libchromatix_s5k6b2yx_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_zslshot.so \
-
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libmmcamera_s5k4ecgx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k4ecgx.so
 
 # JJADD-AFYONSTOCK BLOBS-CAMERA
 PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libc2d2_z180.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d2_z180.so \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libc2d30-a4xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30-a4xx.so \
     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libc2d30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30.so
-
-
-# JJADD-AFYONSTOCK BLOBS-CAMERA-breaks camera
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libactuator_ak7345_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345_camcorder.so \
-#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libactuator_ak7345_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345_camera.so
-
-# JJADD-AFYONSTOCK BLOBS-CAMERA-breaks camera
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libactuator_dw9804_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9804_camcorder.so \
-#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/camera/libactuator_dw9804_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9804_camera.so \
-
-
