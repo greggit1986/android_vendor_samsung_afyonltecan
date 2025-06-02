@@ -97,7 +97,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libcordon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcordon.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libfactoryutil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfactoryutil.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libomission_avoidance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomission_avoidance.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libcordon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcordon.so 
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libcordon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcordon.so  \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmcamera_s5k6a3yx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k6a3yx.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_common.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_default_video.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_preview.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_snapshot.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_video_hd.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_zsl.so
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libjpegdhw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdhw.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libjpegehw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegehw.so
 
 #RIL-G386WVLS1AQB1
 PRODUCT_COPY_FILES += \
