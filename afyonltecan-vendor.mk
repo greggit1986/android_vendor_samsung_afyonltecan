@@ -104,7 +104,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_preview.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_snapshot.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_video_hd.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_zsl.so
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_zsl.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libjpegdhw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdhw.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libjpegehw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegehw.so
