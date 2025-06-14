@@ -87,17 +87,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libarcsoft_panorama_burstcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_panorama_burstcapture.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libqomx_jpegdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegdec.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so
-
-#RIL
-PRODUCT_COPY_FILES += \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libdsucsd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsucsd.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csvt_srvc.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libatparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libatparser.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libcordon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcordon.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libfactoryutil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfactoryutil.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libomission_avoidance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomission_avoidance.so \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libcordon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcordon.so  \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so  \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmcamera_s5k6a3yx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k6a3yx.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_common.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libchromatix_s5k6a3yx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6a3yx_default_video.so \
@@ -108,6 +98,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libjpegdhw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdhw.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libjpegehw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegehw.so
+
+#RIL
+PRODUCT_COPY_FILES += \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libdsucsd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsucsd.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csvt_srvc.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libatparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libatparser.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libcordon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcordon.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libfactoryutil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfactoryutil.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libomission_avoidance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomission_avoidance.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libcordon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcordon.so
 
 #RIL-G386WVLS1AQB1
 PRODUCT_COPY_FILES += \
