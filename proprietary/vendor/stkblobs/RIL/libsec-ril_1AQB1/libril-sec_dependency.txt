@@ -1,0 +1,62 @@
+----- Loading /C:/Users/laurent/Desktop/todumpout/libsec-ril_1AQB1.so -----
+ libc.so == source
+ libcrypto.so == source
+ libcutils.so == source
+ libhardware_legacy.so == source
+ libm.so == source
+ libnetutils.so == source
+ libril.so == source
+ librilutils.so == source
+ libsecnativefeature.so == source
+ libsqlite.so == source
+ libstdc++.so == source
+
+ libdiag.so == afyon-common
+ libidl.so == afyon-common
+ libqcci_legacy.so == afyon-common
+ libqmi.so == afyon-common
+ libqmiservices.so == afyon-common
+ libril-qcril-hook-oem.so == afyon-common
+libdsutils.so == afyon-common
+libqmi_client_qmux.so == afyon-common
+ libstlport.so == msm8226-common
+ libtime_genoff.so == msm8226-common
+
+liblog.so == source
+libicuuc.so == source
+libicui18n.so == source
+libdl.so == source
+libexpat.so == source
+libwpa_client.so == source
+libbinder.so == source
+libutils.so == source
+
+libgabi++.so == Nowhere
+libcorkscrew.so == Nowhere
+
+libgccdemangle.so == Nowhere
+
+
+Linking external programs to libsec-ril_1AQB1.so...
+  [libcutils.so] -> not found
+  [libril.so] -> not found
+  [libnetutils.so] -> not found
+  [libsqlite.so] -> not found
+  [libhardware_legacy.so] -> not found
+  [libstlport.so] -> not found
+  [libcrypto.so] -> not found
+  [librilutils.so] -> not found
+  [libtime_genoff.so] -> not found
+  [libsecnativefeature.so] -> not found
+  [libqcci_legacy.so] -> not found
+  [libqmi.so] -> not found
+  [libqmiservices.so] -> not found
+  [libidl.so] -> not found
+  [libdiag.so] -> not found
+  [libril-qcril-hook-oem.so] -> not found
+  [libc.so] -> not found
+  [libstdc++.so] -> not found
+  [libm.so] -> not found
+----- [libsec-ril_1AQB1.so] Resolve 294 external symbols -----
+Unresolved external symbols which remain: 294
+

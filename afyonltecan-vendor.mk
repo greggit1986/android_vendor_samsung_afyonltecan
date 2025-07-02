@@ -214,9 +214,22 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES += \
 #    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so
 
-PRODUCT_COPY_FILES += \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libsec-ril_patched.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/lib/libsec-ril_patched.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so
 
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/vendor_lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so
 
+###########################################################################
+###############JJReplaced with stockblobs-ril 1AQB1########################
 PRODUCT_COPY_FILES += \
-    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/g386W_stockril/vendor_lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/libsec-ril_1AQB1/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/libsec-ril_1AQB1/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/libsec-ril_1AQB1/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/libsec-ril_1AQB1/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/libsec-ril_1AQB1/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
+     vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/libsec-ril_1AQB1/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/libsec-ril_1AQB1/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/libsec-ril_1AQB1/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/libsec-ril_1AQB1/qmuxd:$(TARGET_COPY_OUT_VENDOR)/bin/qmuxd \
+    vendor/samsung/afyonltecan/proprietary/vendor/stkblobs/RIL/libsec-ril_1AQB1/libsec-ril_patched.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so
