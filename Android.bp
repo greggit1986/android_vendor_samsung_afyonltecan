@@ -46,7 +46,7 @@ cc_library_shared {
     ],
 }
 
-//Qcom ril experiment
+//Qcom ril experiment start here ...
 android_app_import {
 	name: "shutdownlistener",
 	owner: "samsung",
@@ -67,4 +67,15 @@ android_app_import {
 		enabled: false,
 	},
 	soc_specific: true,
+}
+
+//Fix for: dlopen failed: dlopen failed: cannot locate symbol "_ZN7android11AudioSystem13setParametersEiRKNS_7String8E" referenced by "/system/vendor/lib/libril-qc-qmi-1.so"
+cc_library_shared {
+    name: "libaudiosystem_shim",
+    srcs: ["shims/libaudiosystem_shim/libaudiosystem_shim.cpp"],
+    shared_libs: [
+        "libutils",
+    ],
+    vendor: true,
+    compile_multilib: "both",
 }
