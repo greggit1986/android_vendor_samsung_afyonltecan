@@ -120,7 +120,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so
 
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/afyonltecan/proprietary/vendor/lib/libnetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetutils-vendor.so \
-#    vendor/samsung/afyonltecan/proprietary/vendor/lib/librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilutils-vendor.so \
-#    vendor/samsung/afyonltecan/proprietary/vendor/lib/libstdc++.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstdc++-vendor.so \
+#Shims
+PRODUCT_PACKAGES += \
+    libshim_atomic
