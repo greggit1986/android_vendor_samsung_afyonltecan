@@ -7,7 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 #SENSORS
 PRODUCT_COPY_FILES += \
-    vendor/samsung/afyonltecan/proprietary/vendor/lib/libacdapi_clb.so:system/lib/libacdapi_clb.so \
+    vendor/samsung/afyonltecan/proprietary/vendor/lib/libacdapi_clb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdapi_clb.so \
     vendor/samsung/afyonltecan/proprietary/vendor/lib/hw/sensors.msm8226.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.vendor.msm8226.so \
     vendor/samsung/afyonltecan/proprietary/etc/alps_param.dat:$(TARGET_COPY_OUT_VENDOR)/etc/alps_param.dat \
     vendor/samsung/afyonltecan/proprietary/etc/alp_cal.dat:$(TARGET_COPY_OUT_VENDOR)/etc/alp_cal.dat
