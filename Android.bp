@@ -24,3 +24,24 @@ cc_library_shared {
     ],
 }
 
+//Fix for: dlopen failed: cannot locate symbol "strdup8to16" referenced by "/system/vendor/lib/libsec-ril.so"
+cc_library_shared {
+    name: "libshim_cutils",
+    srcs: [
+        "shims/libcutils/strdup16to8.cpp",
+        "shims/libcutils/strdup8to16.cpp",
+    ],
+
+    vendor: true,
+    
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wno-unused-parameter",
+    ],
+    
+    shared_libs: [
+        "libutils",
+        "libcutils",
+    ],
+}

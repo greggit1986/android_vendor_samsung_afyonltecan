@@ -122,4 +122,6 @@ PRODUCT_COPY_FILES += \
 
 #Shims
 PRODUCT_PACKAGES += \
-    libshim_atomic
+    libshim_atomic \
+    libshim_cutils
+
