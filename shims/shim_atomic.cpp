@@ -32,36 +32,3 @@ extern "C" int android_atomic_release_cas(int32_t old_value, int32_t new_value, 
     return 1; // Failure
 }
 
-/*https://github.com/acroreiser/android_device_leeco_s2/commit/38e3e2e46d2943c9f6c342d9534cc0cc2ba22fea
-
-#include <string>
-#define ANDROID_ATOMIC_INLINE
-
-extern "C" {
-
-#include <cutils/atomic.h>
-
-}
-*/
-
-
-
-/*GPT
-#include <stdatomic.h>
-#include <stdint.h>
-
-
- * Old Android atomic API compatibility shim
- * android_atomic_release_cas is gone in modern bionic
-
-int android_atomic_release_cas(int32_t old_value,
-                               int32_t new_value,
-                               volatile int32_t *addr)
-{
-    int32_t expected = old_value;
-    return !atomic_compare_exchange_strong(
-        (atomic_int *)addr,
-        &expected,
-        new_value
-    );
-}*/
