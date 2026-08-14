@@ -8,7 +8,7 @@ soong_namespace {
 //Fix for: dlopen failed: dlopen failed: cannot locate symbol "android_atomic_release_cas" referenced by "/system/vendor/lib/libsec-ril.so"...
 cc_library_shared {
     name: "libshim_atomic",
-    srcs: ["shims/shims_atomic.cpp"],
+    srcs: ["shims/shim_atomic.cpp"],
     
     vendor: true,
     
