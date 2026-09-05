@@ -79,3 +79,20 @@ cc_library_shared {
     vendor: true,
     compile_multilib: "both",
 }
+
+//Fix for:
+//08-22 15:14:11.905  6541  6541 F DEBUG   :       #01 pc 00098031  /apex/com.android.runtime/lib/bionic/libc.so (__strlen_chk+4) (BuildId: 4c32c2ce7b48ba6e54d29fbd20e04bbd)
+//08-22 15:14:11.906  6541  6541 F DEBUG   :       #02 pc 000afb4f  /apex/com.android.runtime/lib/bionic/libc.so (__vfprintf+3186) (BuildId: 4c32c2ce7b48ba6e54d29fbd20e04bbd)
+//08-22 15:14:11.906  6541  6541 F DEBUG   :       #03 pc 0008128b  /apex/com.android.runtime/lib/bionic/libc.so (vsnprintf+158) (BuildId: 4c32c2ce7b48ba6e54d29fbd20e04bbd)
+//08-22 15:14:11.906  6541  6541 F DEBUG   :       #04 pc 000da95b  /system/vendor/lib/libril-qc-qmi-1.so (qcril_format_log_msg+38) (BuildId: 677060327c14d4383228d8b259206086)
+//08-22 15:14:11.906  6541  6541 F DEBUG   :       #05 pc 0007c145  /system/vendor/lib/libril-qc-qmi-1.so (qcril_am_is_same_audio_call_state(unsigned long, unsigned long)+636) (BuildId: 677060327c14d4383228d8b259206086)
+
+cc_library_shared {
+    name: "qcrilformatlogmsg_shim",
+    srcs: ["shims/qcrilformatlogmsg_shim/qcrilformatlogmsg_shim.cpp"],
+    shared_libs: [
+        "liblog",
+    ],
+    vendor: true,
+    compile_multilib: "32",
+}
