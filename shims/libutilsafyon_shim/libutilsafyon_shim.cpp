@@ -21,6 +21,7 @@ namespace android {
 
 extern "C" {
 
+// 1. String8::find(char const*, unsigned int) const - Symbol: _ZNK7android7String84findEPKcj
 int _ZNK7android7String84findEPKcj(const char* self, const char* other, unsigned int start) {
     if (!self || !other) {
         return -1;
@@ -38,6 +39,25 @@ int _ZNK7android7String84findEPKcj(const char* self, const char* other, unsigned
     }
 
     return static_cast<int>(match - str);
+}
+
+// 2. String8::~String8() [Complete Destructor] - Symbol: _ZN7android7String8D1Ev
+void _ZN7android7String8D1Ev(void* self) {
+    // Intercept destructor to prevent SharedBuffer::release on invalid/mismatched buffer headers
+    if (!self) return;
+
+    // Legacy String8 in 32-bit holds a single const char* mString member at offset 0
+    char** str_ptr = reinterpret_cast<char**>(self);
+    if (str_ptr && *str_ptr) {
+        // Nullify or perform safe cleanup if dynamically allocated by custom allocator,
+        // otherwise stub out to avoid release() crash on static or legacy memory layouts.
+        *str_ptr = nullptr;
+    }
+}
+
+// 3. String8::~String8() [Base Object Destructor] - Symbol: _ZN7android7String8D2Ev
+void _ZN7android7String8D2Ev(void* self) {
+    _ZN7android7String8D1Ev(self);
 }
 
 } // extern "C"
