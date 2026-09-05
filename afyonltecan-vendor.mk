@@ -160,5 +160,6 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     shutdownlistener \
     libaudiosystem_shim \
-    qcrilformatlogmsg_shim
+    qcrilformatlogmsg_shim \
+    libutilsafyon_shim
 

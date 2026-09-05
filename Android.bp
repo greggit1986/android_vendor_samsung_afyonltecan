@@ -96,3 +96,17 @@ cc_library_shared {
     vendor: true,
     compile_multilib: "32",
 }
+
+//Fix for: 
+//#00 pc 00010d28  /system/vendor/lib/libutils.so (android::String8::find(char const*, unsigned int) const+8) (BuildId: fa21b0597aaf8b64e4adac8c7c292449)
+cc_library_shared {
+    name: "libutilsafyon_shim",
+    srcs: ["shims/libutilsafyon_shim/libutilsafyon_shim.cpp"],
+    shared_libs: [
+        "libutils",
+        "libcutils",
+        "liblog",
+    ],
+    compile_multilib: "32",
+    vendor: true,
+}
